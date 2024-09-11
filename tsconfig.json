@@ -1,0 +1,16 @@
+{
+	"compilerOptions": {
+		"jsx": "react-jsx", // For React 17+ JSX transformations; use "react" for React 16 or older.
+		"declaration": true, // This is essential to generate .d.ts files
+		"declarationDir": "dist", // Output the declarations in the dist folder
+		"emitDeclarationOnly": true, // Only emit the declaration files, not JS
+		"outDir": "dist", // Where to store the build files
+		"moduleResolution": "node",
+		"module": "ESNext",
+		"target": "ES6",
+		"esModuleInterop": true,
+		"skipLibCheck": true
+	},
+	"include": ["src/**/*"], // Include your source files
+	"exclude": ["node_modules", "dist"]
+}
