@@ -1,18 +1,43 @@
 {
-	"name": "@sheet-ui/sheet",
-	"main": "dist/index.cjs.js",
-	"module": "dist/index.esm.js",
-	"scripts": {
-		"build": "NODE_ENV=production node esbuild.config.mjs && tsc --emitDeclarationOnly",
-		"build:dev": "NODE_ENV=development node esbuild.config.mjs"
-	},
-	"types": "dist/index.d.ts",
-	"devDependencies": {
-		"esbuild": "0.23.1",
-		"typescript": "^5.6.2"
-	},
-	"peerDependencies": {
-		"react": "^18.3.1",
-		"react-dom": "^18.3.1"
-	}
+  "name": "@sheet-ui/sheet",
+  "author": "henryzhu.eth",
+  "license": "MIT",
+  "description": "A 📄 sheet is a modal used to replicate an Apple-like sheet experience on the mobile web.",
+  "homepage": "https://github.com/sheet-ui/sheet",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sheet-ui/sheet"
+  },
+  "bugs": {
+    "url": "https://github.com/sheet-ui/sheet/issues"
+  },
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "vite": "vite",
+    "build": "NODE_ENV=production node esbuild.config.mjs && tsc --emitDeclarationOnly",
+    "build:dev": "NODE_ENV=development node esbuild.config.mjs"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.11",
+    "esbuild": "0.24.0",
+    "typescript": "^5.6.2",
+    "vite": "^5.4.8"
+  },
+  "peerDependencies": {
+    "framer-motion": "^11.11.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "dependencies": {
+    "react-aria-components": "^1.4.0"
+  }
 }
