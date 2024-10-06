@@ -141,6 +141,7 @@ export const SheetContent = forwardRef<HTMLDivElement, SheetContentProps>(
         {isOpen && (
           <MotionModalOverlay
             isOpen={isOpen}
+            onTap={onDismiss}
             onOpenChange={onDismiss}
             style={{
               inset: 0,
