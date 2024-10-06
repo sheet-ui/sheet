@@ -1,12 +1,13 @@
 {
   "name": "@sheet-ui/sheet",
+  "version": "1.0.0",
   "author": "henryzhu.eth",
   "license": "MIT",
   "description": "A 📄 sheet is a modal used to replicate an Apple-like sheet experience on the mobile web.",
   "homepage": "https://github.com/sheet-ui/sheet",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sheet-ui/sheet"
+    "url": "git+https://github.com/sheet-ui/sheet.git"
   },
   "bugs": {
     "url": "https://github.com/sheet-ui/sheet/issues"
@@ -39,6 +40,5 @@
   },
   "dependencies": {
     "react-aria-components": "^1.4.0"
-  },
-  "version": "1.0.0"
+  }
 }

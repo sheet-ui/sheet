@@ -10,13 +10,13 @@ A mobile web sheet that replicates the Apple-style [sheet experience](https://de
 
 ## Usage
 
-To use Sheet in your project follow these instructions.
+Explore the [Sheet examples](https://sheet-examples.vercel.app) and view the [example code](https://github.com/hzhu/sheet-examples). To use Sheet in your project follow these instructions.
 
 ### Step 1: Install peer dependency
 
 First, make sure you have the required peer dependency [framer-motion](https://github.com/framer/motion) installed. If you haven't installed it yet, you can do so with the following command:
 
-```
+```sh
 npm install framer-motion
 ```
 
@@ -24,7 +24,7 @@ npm install framer-motion
 
 After installing the peer dependency, proceed to install the [@sheet-ui/sheet](https://www.npmjs.com/package/@sheet-ui/sheet) package:
 
-```
+```sh
 npm install @sheet-ui/sheet
 ```
 
@@ -33,6 +33,8 @@ npm install @sheet-ui/sheet
 The component API provides consumers with a high level of rendering control through a simple interface.
 
 ```tsx
+import { Sheet, SheetHeader, SheetContent } from "@sheet-ui/sheet";
+
 function Example() {
   const [isOpen, setOpen] = useState(false);
   const toggle = () => setOpen(!isOpen);
@@ -55,7 +57,7 @@ To develop `@sheet-ui/sheet`, link the local library to a local test application
 
 To avoid issues caused by multiple React instances (such as hooks failing due to different React copies), ensure that both the library and the consumer app share the same React dependency.
 
-In the root directory of your library, run the following command to link React from your consumer app:
+In the root directory of `@sheet-ui/sheet`, run the following command to link React from your consumer app:
 
 ```sh
 npm link ../my-library-consumer/node_modules/react
