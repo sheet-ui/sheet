@@ -1,6 +1,6 @@
 {
   "name": "@sheet-ui/sheet",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "henryzhu.eth",
   "license": "MIT",
   "description": "A 📄 sheet is a modal used to replicate an Apple-like sheet experience on the mobile web.",
