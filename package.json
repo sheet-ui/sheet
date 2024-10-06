@@ -4,6 +4,19 @@
   "author": "henryzhu.eth",
   "license": "MIT",
   "description": "A 📄 sheet is a modal used to replicate an Apple-like sheet experience on the mobile web.",
+  "keywords": [
+    "ios",
+    "web",
+    "a11y",
+    "sheet",
+    "modal",
+    "dialog",
+    "animation",
+    "bottom sheet",
+    "accessibility",
+    "react component",
+    "progressive-web-app"
+  ],
   "homepage": "https://github.com/sheet-ui/sheet",
   "repository": {
     "type": "git",

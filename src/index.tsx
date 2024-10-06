@@ -62,11 +62,11 @@ const SHEET_MARGINS = {
   xs: 540,
 } as const;
 
-const MotionModal = motion(
+const MotionModal = motion.create(
   Modal as ForwardRefExoticComponent<RefAttributes<HTMLDivElement>>
 );
 
-const MotionModalOverlay = motion(
+const MotionModalOverlay = motion.create(
   ModalOverlay as ForwardRefExoticComponent<
     ModalOverlayProps & RefAttributes<HTMLDivElement>
   >
