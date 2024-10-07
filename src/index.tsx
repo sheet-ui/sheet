@@ -136,12 +136,17 @@ export const SheetContent = forwardRef<HTMLDivElement, SheetContentProps>(
       windowRef.current = window;
     }, []);
 
+    const onTap = (event: Event) => {
+      const target = event.target as HTMLDivElement;
+      if (target.classList.contains("react-aria-ModalOverlay")) onDismiss();
+    };
+
     return (
       <AnimatePresence>
         {isOpen && (
           <MotionModalOverlay
+            onTap={onTap}
             isOpen={isOpen}
-            onTap={onDismiss}
             onOpenChange={onDismiss}
             style={{
               inset: 0,
@@ -166,7 +171,6 @@ export const SheetContent = forwardRef<HTMLDivElement, SheetContentProps>(
                 borderTopLeftRadius: "0.75rem",
                 borderTopRightRadius: "0.75rem",
                 paddingBottom: window.screen.height,
-                backgroundColor: "rgb(243, 232, 255)",
                 ...style,
               }}
               drag="y"
